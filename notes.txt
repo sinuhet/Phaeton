@@ -1,0 +1,5 @@
+sudo -u postgres psql
+CREATE USER phaeton WITH PASSWORD 'phaeton';
+CREATE DATABASE phaeton;
+GRANT ALL PRIVILEGES ON DATABASE phaeton TO phaeton;
+\q
